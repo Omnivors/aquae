@@ -1,0 +1,9 @@
+In questo file c'è la codifica del telecomando del vaporizzatore, utilizza i codici NEC.
+
+ON/OFF 		FF807F
+DISPLAY 	FF40BF
+AUTO 		FFA05F
+MIST LEVEL 	FF10EF
+HUMIDITY 	FF58A7
+TIMER		FF50AF
+WARM		FF7887
