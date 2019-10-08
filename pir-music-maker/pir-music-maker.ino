@@ -87,9 +87,6 @@ void setup() {
 
 }
 
-int sample;
-String filename_string;
-char filename[7];
 
 void loop() {
 
@@ -100,7 +97,8 @@ void loop() {
     if (pirState == LOW) {
       // we have just turned on
       Serial.println("Motion detected!");
-
+      
+      // choose random file
       int sample = random(0, 7);
       String filename_string = "/" + String(sample) + ".wav";
       char filename[7];
@@ -108,7 +106,6 @@ void loop() {
 
       Serial.println(filename);
       
-     
       musicPlayer.startPlayingFile(filename);
 
       while (musicPlayer.playingMusic) {
@@ -136,7 +133,7 @@ void loop() {
       pirState = HIGH;
     }
   } else {
-    digitalWrite(ledPin, LOW); // turn LED OFF
+    // digitalWrite(ledPin, LOW); // turn LED OFF
     if (pirState == HIGH){
       // we have just turned of
       Serial.println("Motion ended!");
@@ -148,13 +145,4 @@ void loop() {
 
   delay(100);
 
-}
-
-char * chooseRandomFile() {
-  int sample = random(0, 7);
-  String filename_string = "/" + String(sample) + ".wav";
-  char filename[7];
-  filename_string.toCharArray(filename, 7);
-  Serial.println(filename);
-  return filename;
 }
