@@ -26,3 +26,13 @@
     * rileviamo il movimento, come costruiamo un'esperienza piacevole basata sul movimento?
     * c'è un po' di ritardo (~5/6 secondi) da quando il movimento finisce a quando lo stato si aggiorna
     * idea: far partire samples che si sovrappongono ogni volta che rileviamo un movimento
+
+## Parallax X-Band Motion Detector 32213
+* [Parallax X-Band Motion Detector 32213 datasheet](https://www.parallax.com/sites/default/files/downloads/32213-X-BandMotionDetector-v1.1_0.pdf)
+* Tutorial / Code examples
+    * [Making Sort of Palatable Music With an X-Band Motion Sensor](https://www.instructables.com/id/Making-sort-of-palatable-music-with-an-X-Band-moti/)
+
+## RCWL-0516 Microwave Sensor
+* [RCWL-0516 Datasheet](https://www.epitran.it/ebayDrive/datasheet/19.pdf)
+* Tutorial
+    * [RCWL-0516 Microwave Proximity Sensor - With & Without Arduino](https://www.youtube.com/watch?v=IJoPkKlxFXA)
