@@ -1,0 +1,15 @@
+Il sensore X-Band misura la velocità di un oggetto grazie all'effetto Doppler. 
+L'output del sensore al pin OUT è un'onda sinusoidale la cui frequenza è proporzionale alla velocità degli oggetti davanti all'antenna.
+La frequenza può essere stimata su Arduino tramite la liberia FreqMeasure.h
+
+Di seguito alcuni valori tipici di frequenze rilevate attraverso vari ostacoli. In tutti gli esperimenti la persona in movimento si trovava nella direzione di massima sensibilità dell'antenna e il potenziometro della sensibilità era settato sul massimo.
+
+Persona che cammina direttamente verso il dispositivo:
+- nessun ostacolo: 10-40
+- porta: 2-20
+- specchio: 2-15
+
+Persona che muove un braccio a circa un metro dal dispositivo:
+- nessun ostacolo: 1-8
+- porta: 0-3
+- specchio: 0-3
