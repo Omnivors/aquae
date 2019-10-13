@@ -1,8 +1,8 @@
 # Aquae
-Sanbox for Raoul Gilioli's Aquae artwork
+Sandbox for Raoul Gilioli's Aquae artwork
 
 
-**This repository is meant to updload Arduino sketches and other draft codes for sensors and technology to be tested for Aquae artwokrs**
+**This repository is meant for uploading Arduino sketches and other draft codes for sensors and technology to be tested for Aquae artworks**
 
 ## How to use this repository:
 * clone the repository to your local machine with `git clone https://github.com/Omnivors/aquae.git`
