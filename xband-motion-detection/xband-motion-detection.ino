@@ -42,7 +42,7 @@ void loop() {
   movement_detected = check_movements();
   
   if (movement_detected) {
-    Serial.print("Someone is moving! Do something");
+    Serial.println("Someone is moving! Do something");
     play_audio_sample();
   } 
 }
