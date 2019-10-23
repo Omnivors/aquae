@@ -31,7 +31,7 @@
 #define DREQ 2      // VS1053 Data request, ideally an Interrupt pin
 
 #define INPUT_PIN 2
-#define LED_PIN 7
+#define LED_PIN 6
 
 // create shield-example object!
 Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
@@ -103,7 +103,7 @@ void loop() {
 
       //musicPlayer.GPIO_digitalWrite(LED_PIN, HIGH);
             
-      filename_string = "/" + String(sample) + ".wav";
+      filename_string = "/" + String(sample) + ".mp3";
       filename_string.toCharArray(filename, 7);
 
       Serial.println(filename);
@@ -115,7 +115,7 @@ void loop() {
       //musicPlayer.GPIO_digitalWrite(LED_PIN, LOW);
 
       sample++;
-      if (sample == 5) {
+      if (sample == 6) {
         sample = 0;
       }
 
@@ -132,6 +132,6 @@ void loop() {
     }
   }*/
   
-  delay(100);
+  delay(50);
   
 }
